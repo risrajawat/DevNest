@@ -1,0 +1,94 @@
+/* Profile Section */
+.profile-header {
+    max-width: 850px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: white;
+    padding: 18px;
+    border-radius: 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.profile-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.profile-sub {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* Section Title */
+.section-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+
+/* Post Card Styling */
+.post-card {
+    background: white;
+    padding: 18px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.post-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.post-username {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.post-time {
+    font-size: 13px;
+    color: #818181;
+}
+
+.post-text {
+    margin: 12px 0 16px 0;
+    line-height: 1.5;
+}
+
+.post-image {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 14px;
+}
+
+/* Post actions */
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+}
+
+.post-actions span {
+    cursor: pointer;
+    font-size: 15px;
+    color: #4f46e5;
+    transition: 0.2s;
+}
+
+.post-actions span:hover {
+    opacity: 0.7;
+}

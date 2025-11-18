@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/home.css">
     <title>DevNest | Home</title>
   </head>
   <body>
@@ -21,20 +22,89 @@
       </div>
     </header>
 
-    <main class="container">
-      <section>
-        <h2>Latest Projects</h2>
+    <!-- <section class="profile-header">
+      <img
+        src="assets/images/profile.png"
+        alt="profile"
+        class="profile-avatar"
+      />
+      <div>
+        <h2>Rishabh Singh</h2>
+        <p class="profile-sub">Developer • Learner • JavaScript Enthusiast</p>
+      </div>
+    </section> -->
 
-        <article class="card">
-          <h3>AI Chatbot</h3>
-          <p>Chatbot built with Python & Gemini API.</p>
-        </article>
+    <!-- POSTS SECTION -->
+    <section class="container">
+      <h2 class="section-title">Latest Posts</h2>
 
-        <article class="card">
-          <h3>Portfolio Website</h3>
-          <p>Responsive portfolio website using HTML, CSS, JS.</p>
-        </article>
-      </section>
-    </main>
+      <!-- POST 1 -->
+      <article class="post-card">
+        <div class="post-header">
+          <img src="/assets/images/profile-8.jpg" class="post-avatar" />
+          <div>
+            <h3 class="post-username">Rishabh Singh</h3>
+            <p class="post-time">2 hours ago</p>
+          </div>
+        </div>
+
+        <p class="post-text">
+          Just completed my AI Chatbot using Python & Gemini API! 🚀 Super
+          excited to explore more AI tools.
+        </p>
+        <img src="/assets/images/gemini.png" alt="myclone" class="post-image">
+
+        <div class="post-actions">
+          <span>👍 Like</span>
+          <span>💬 Comment</span>
+          <span>🔗 Share</span>
+        </div>
+      </article>
+
+      <!-- POST 2 -->
+      <article class="post-card">
+        <div class="post-header">
+          <img src="assets/images/profile.png" class="post-avatar" />
+          <div>
+            <h3 class="post-username">Anumank pal</h3>
+            <p class="post-time">1 day ago</p>
+          </div>
+        </div>
+
+        <p class="post-text">
+          Built a responsive portfolio website using HTML, CSS, and JavaScript.
+          Here's the GitHub repo link: <b>github.com/rishabh/portfolio</b>
+        </p>
+
+        <div class="post-actions">
+          <span>👍 Like</span>
+          <span>💬 Comment</span>
+          <span>🔗 Share</span>
+        </div>
+      </article>
+
+      <!-- POST 3 -->
+      <article class="post-card">
+        <div class="post-header">
+          <img src="assets/images/profile.png" class="post-avatar" />
+          <div>
+            <h3 class="post-username">Dev Community</h3>
+            <p class="post-time">3 days ago</p>
+          </div>
+        </div>
+
+        <p class="post-text">
+          Here are **Top 5 Free Resources** to learn JavaScript:
+          <br />1. MDN Docs <br />2. FreeCodeCamp <br />3. W3Schools <br />4.
+          JavaScript.info <br />5. ChatGPT 😉
+        </p>
+
+        <div class="post-actions">
+          <span>👍 Like</span>
+          <span>💬 Comment</span>
+          <span>🔗 Share</span>
+        </div>
+      </article>
+    </section>
   </body>
 </html>

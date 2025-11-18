@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/explore.css">
     <title>DevNest | Explore</title>
   </head>
   <body>
@@ -18,20 +19,55 @@
       </nav>
     </header>
 
-    <main class="container">
-      <section>
-        <h2>Explore Projects</h2>
+    <section class="explore-section">
+    <h2 class="heading">Explore Developers</h2>
 
-        <article class="card">
-          <h3>Weather App</h3>
-          <p>Weather app using Fetch API and OpenWeather.</p>
-        </article>
+    <!-- Developer Card -->
+    <div class="dev-card">
+      <img src="assets/images/profile-8.jpg" class="dev-avatar" />
 
-        <article class="card">
-          <h3>UI Kit</h3>
-          <p>Pre-built UI components using only CSS.</p>
-        </article>
-      </section>
-    </main>
+      <div class="dev-info">
+        <h3>Rishabh Singh</h3>
+        <p>JavaScript • React • AI/ML</p>
+      </div>
+
+      <button class="connect-btn" onclick="openModal('Rishabh Singh')">Connect</button>
+    </div>
+
+    <div class="dev-card">
+      <img src="assets/images/profile-3.jpg" class="dev-avatar" />
+      <div class="dev-info">
+        <h3>Neha Verma</h3>
+        <p>Full Stack • Python • DevOps</p>
+      </div>
+      <button class="connect-btn" onclick="openModal('Neha Verma')">Connect</button>
+    </div>
+
+    <div class="dev-card">
+      <img src="assets/images/profile-4.jpg" class="dev-avatar" />
+      <div class="dev-info">
+        <h3>Arjun Mehta</h3>
+        <p>Android • Kotlin • Firebase</p>
+      </div>
+      <button class="connect-btn" onclick="openModal('Arjun Mehta')">Connect</button>
+    </div>
+
+  </section>
+
+  <!-- MODAL for sending note (Required) -->
+  <div id="connectModal" class="modal">
+    <div class="modal-box">
+      <h3 id="modalTitle">Send Connection Request</h3>
+
+      <textarea placeholder="Write why you want to connect..." id="noteInput"></textarea>
+
+      <div class="modal-actions">
+        <button class="cancel-btn" onclick="closeModal()">Cancel</button>
+        <button class="send-btn" onclick="sendRequest()">Send</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/explore.js"></script>
   </body>
 </html>
