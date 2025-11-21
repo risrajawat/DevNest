@@ -3,41 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/global.css">
-    <title>DevNest | Upload</title>
+    <title>Upload Project | DevNest</title>
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="/css/upload.css" />
   </head>
-  <style>
-    .form-box input, .form-box textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 12px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-    }
-  </style>
+
   <body>
-    <header class="navbar">
+    <!-- NAVBAR -->
+    <div class="navbar">
       <div class="logo">DevNest</div>
-      <nav class="nav-links">
+      <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="explore.html">Explore</a>
         <a href="upload.html">Upload</a>
         <a href="profile.html">Profile</a>
         <a href="reels.html">Reels</a>
-      </nav>
-    </header>
+      </div>
+    </div>
 
-    <main class="container">
-      <section>
-        <h2>Upload a Project</h2>
+    <div class="upload-wrapper">
+      <h2 class="upload-title">Upload Your Project 🚀</h2>
 
-        <div class="card form-box">
-          <input type="text" placeholder="Project Title" />
-          <textarea rows="5" placeholder="Project Description"></textarea>
-          <input type="url" placeholder="GitHub Link" />
-          <button class="btn">Upload</button>
-        </div>
-      </section>
-    </main>
+      <label>Project Title*</label>
+      <input type="text" placeholder="Ex: AI Chatbot using Gemini API" />
+
+      <label>Short Description*</label>
+      <textarea
+        placeholder="Describe what your project does and why it's useful"
+      ></textarea>
+
+      <label>Tech Stack*</label>
+      <input
+        type="text"
+        placeholder="Ex: HTML, CSS, JavaScript, Python, Firebase, React"
+      />
+
+      <label>GitHub Repository Link*</label>
+      <input type="url" placeholder="https://github.com/yourname/project" />
+
+      <label>Live Demo (optional)</label>
+      <input type="url" placeholder="https://your-project-demo.com" />
+
+      <label>Upload Project Thumbnail (Image)*</label>
+      <div class="file-input">
+        <p>Click to Upload Image</p>
+        <input type="file" accept="image/*" style="display: none" />
+      </div>
+
+      <label>Why should people check your project?*</label>
+      <textarea
+        placeholder="Explain what makes your project stand out"
+      ></textarea>
+
+      <button class="btn-upload">Upload Project</button>
+    </div>
   </body>
 </html>

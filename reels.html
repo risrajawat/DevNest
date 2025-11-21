@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/global.css">
-    <title>DevNest | Reels</title>
-  </head>
-  <style>
-    .tag {
-      background: var(--primary);
-      color: white;
-      padding: 8px 16px;
-      border-radius: 20px;
-      margin-right: 10px;
-      display: inline-block;
-    }
-    video {
-      width: 100%;
-      border-radius: 12px;
-      margin-top: 20px;
-    }
-  </style>
-  <body>
-    <header class="navbar">
-      <div class="logo">DevNest</div>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="explore.html">Explore</a>
-        <a href="upload.html">Upload</a>
-        <a href="profile.html">Profile</a>
-        <a href="reels.html">Reels</a>
-      </nav>
-    </header>
+<head>
+  <title>DevNest | Reels</title>
+  <link rel="stylesheet" href="css/reels.css">
+  <link rel="stylesheet" href="css/global.css">
+</head>
+<body>
 
-    <main class="container">
-      <section>
-        <h2>Reels</h2>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo">DevNest</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="upload.html">Upload</a>
+      <a href="profile.html">Profile</a>
+      <a href="reels.html">Reels</a>
+    </div>
+  </div>
 
-        <div class="tag">Motivation</div>
-        <div class="tag">Funny</div>
+  <section class="reels-container">
 
-        <video controls src="assets/videos/motivation1.mp4"></video>
-        <video controls src="assets/videos/funny1.mp4"></video>
-      </section>
-    </main>
-  </body>
+    <!-- Reel 1 -->
+    <div class="reel">
+      <video class="reel-video" src="assets/videos/motivation1.mp4" controls loop></video>
+
+      <div class="reel-info">
+        <h3>@rishabh_ai</h3>
+        <p>AI is the future. Keep building! 🚀</p>
+      </div>
+
+      <div class="reel-actions">
+        <img src="assets/icons/heart.png" class="icon">
+        <img src="assets/icons/comment.png" class="icon">
+        <img src="assets/icons/share.png" class="icon">
+      </div>
+    </div>
+
+    <!-- Reel 2 -->
+    <div class="reel">
+      <video class="reel-video" src="assets/videos/funny1.mp4" controls loop></video>
+
+      <div class="reel-info">
+        <h3>@arjun_dev</h3>
+        <p>POV: When your code works on the first try 😂🔥</p>
+      </div>
+
+      <div class="reel-actions">
+        <img src="assets/icons/heart.png" class="icon">
+        <img src="assets/icons/comment.png" class="icon">
+        <img src="assets/icons/share.png" class="icon">
+      </div>
+    </div>
+
+  </section>
+
+</body>
 </html>

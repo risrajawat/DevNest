@@ -1,0 +1,84 @@
+body {
+      background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+      min-height: 100vh;
+    }
+
+    .upload-wrapper {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.55);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .upload-title {
+      text-align: center;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: #4338ca;
+    }
+
+    label {
+      font-weight: 600;
+      margin-bottom: 6px;
+      display: block;
+      color: #333;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 14px;
+      font-size: 15px;
+      margin-bottom: 18px;
+      border-radius: 10px;
+      border: 1px solid #d4d4d4;
+      background: #fafafa;
+      transition: all 0.2s ease;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: #6366f1;
+      background: white;
+      box-shadow: 0 0 4px rgba(99, 102, 241, 0.4);
+    }
+
+    textarea {
+      resize: none;
+      height: 130px;
+    }
+
+    .btn-upload {
+      width: 100%;
+      padding: 14px;
+      font-size: 16px;
+      color: white;
+      background: linear-gradient(135deg, #4f46e5, #9333ea);
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .btn-upload:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+    }
+
+    .file-input {
+      border: 2px dashed #acacac;
+      padding: 25px;
+      text-align: center;
+      cursor: pointer;
+      color: #444;
+      background: #fafafa;
+    }
