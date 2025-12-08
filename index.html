@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/home.css" />
     <title>DevNest | Home</title>
   </head>
   <body>
@@ -12,33 +12,21 @@
       <div class="navbar">
         <div class="logo">DevNest</div>
 
-        <div class="nav-links">
+        <div class="nav-links" id="navMenu">
           <a href="index.html">Home</a>
           <a href="explore.html">Explore</a>
           <a href="upload.html">Upload</a>
           <a href="profile.html">Profile</a>
           <a href="reels.html">Reels</a>
         </div>
+
+        <button id="themeToggle" class="toggle-btn">🌙</button>
       </div>
     </header>
 
-    <!-- <section class="profile-header">
-      <img
-        src="assets/images/profile.png"
-        alt="profile"
-        class="profile-avatar"
-      />
-      <div>
-        <h2>Rishabh Singh</h2>
-        <p class="profile-sub">Developer • Learner • JavaScript Enthusiast</p>
-      </div>
-    </section> -->
-
-    <!-- POSTS SECTION -->
     <section class="container">
       <h2 class="section-title">Latest Posts</h2>
 
-      <!-- POST 1 -->
       <article class="post-card">
         <div class="post-header">
           <img src="/assets/images/profile-8.jpg" class="post-avatar" />
@@ -52,13 +40,16 @@
           Just completed my AI Chatbot using Python & Gemini API! 🚀 Super
           excited to explore more AI tools.
         </p>
-        <img src="/assets/images/gemini.png" alt="myclone" class="post-image">
+        <img src="/assets/images/gemini.png" alt="myclone" class="post-image" />
 
         <div class="post-actions">
-          <span>👍 Like</span>
-          <span>💬 Comment</span>
-          <span>🔗 Share</span>
+          <span class="like-btn" data-likes="0">👍 Like 0</span>
+          <span class="comment-btn">💬 Comment</span>
+          <span class="share-btn">🔗 Share</span>
         </div>
+
+        <!-- comment box (add below) -->
+        <div class="comments"></div>
       </article>
 
       <!-- POST 2 -->
@@ -77,16 +68,17 @@
         </p>
 
         <div class="post-actions">
-          <span>👍 Like</span>
-          <span>💬 Comment</span>
-          <span>🔗 Share</span>
+          <span class="like-btn" data-likes="0">👍 Like 0</span>
+          <span class="comment-btn">💬 Comment</span>
+          <span class="share-btn">🔗 Share</span>
         </div>
+        <div class="comments"></div>
       </article>
 
       <!-- POST 3 -->
       <article class="post-card">
         <div class="post-header">
-          <img src="assets/images/profile.png" class="post-avatar"/>
+          <img src="assets/images/profile.png" class="post-avatar" />
           <div>
             <h3 class="post-username">Dev Community</h3>
             <p class="post-time">3 days ago</p>
@@ -100,11 +92,13 @@
         </p>
 
         <div class="post-actions">
-          <span>👍 Like</span>
-          <span>💬 Comment</span>
-          <span>🔗 Share</span>
+          <span class="like-btn" data-likes="0">👍 Like 0</span>
+          <span class="comment-btn">💬 Comment</span>
+          <span class="share-btn">🔗 Share</span>
         </div>
+        <div class="comments"></div>
       </article>
     </section>
+    <script src="/js/app.js"></script>
   </body>
 </html>

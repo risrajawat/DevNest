@@ -1,53 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/global.css">
-    <title>DevNest | Profile</title>
-  </head>
-  <style>
-    .profile-box {
-      background: white;
-      padding: 20px;
-      text-align: center;
-      border-radius: 12px;
-    }
-    .avatar {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      margin-bottom: 10px;
-    }
-  </style>
-  <body>
-    <header class="navbar">
-      <div class="logo">DevNest</div>
-      <nav class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="explore.html">Explore</a>
-        <a href="upload.html">Upload</a>
-        <a href="profile.html">Profile</a>
-        <a href="reels.html">Reels</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | DevNest</title>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/profile.css" />
+</head>
 
-    <!-- PROFILE SECTION -->
-    <main class="container">
-      <section class="profile-box">
-        <img src="assets/images/profile.png" class="avatar" />
-        <h3>Rishabh Singh</h3>
-        <p>Developer • Learner • JavaScript Enthusiast</p>
-      </section>
+<body>
+  <div class="navbar">
+    <div class="logo">DevNest</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="upload.html">Upload</a>
+      <a href="#" class="active-nav">Profile</a>
+      <a href="reels.html">Reels</a>
+    </div>
+  </div>
 
-      <section>
-        <h2>Your Projects</h2>
+  <section class="profile-card">
+    <img src="assets/images/profile-8.jpg" class="profile-pic" alt="">
+    <h2 id="userName">Rishabh Singh</h2>
+    <p class="role">Developer • Learner • JavaScript Enthusiast</p>
+  </section>
 
-        <article class="card">
-          <h3>Chatbot</h3>
-          <p>Python + AI API based chatbot.</p>
-        </article>
-      </section>
-    </main>
-  </body>
+  <section class="tabs">
+    <button class="tab-btn active" data-tab="projects">Projects</button>
+    <button class="tab-btn" data-tab="posts">Posts</button>
+    <button class="tab-btn" data-tab="about">About</button>
+  </section>
+
+  <section id="tabContent" class="tabContent"></section>
+
+  <script src="js/profile.js"></script>
+</body>
 </html>

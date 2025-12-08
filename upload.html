@@ -1,62 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Upload Project | DevNest</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Project | DevNest</title>
 
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="/css/upload.css" />
-  </head>
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/upload.css" />
+</head>
 
-  <body>
-    <!-- NAVBAR -->
-    <div class="navbar">
-      <div class="logo">DevNest</div>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="explore.html">Explore</a>
-        <a href="upload.html">Upload</a>
-        <a href="profile.html">Profile</a>
-        <a href="reels.html">Reels</a>
-      </div>
+<body>
+
+  <div class="navbar">
+    <div class="logo">DevNest</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="explore.html">Explore</a>
+      <a href="upload.html">Upload</a>
+      <a href="profile.html">Profile</a>
+      <a href="reels.html">Reels</a>
     </div>
+  </div>
 
-    <div class="upload-wrapper">
-      <h2 class="upload-title">Upload Your Project 🚀</h2>
+  <div class="upload-wrapper">
+    <h2 class="upload-title">Upload Your Project 🚀</h2>
+
+    <form id="uploadForm">
 
       <label>Project Title*</label>
-      <input type="text" placeholder="Ex: AI Chatbot using Gemini API" />
+      <input name="title" type="text" placeholder="Ex: AI Chatbot using Gemini API" required/>
 
       <label>Short Description*</label>
-      <textarea
-        placeholder="Describe what your project does and why it's useful"
-      ></textarea>
+      <textarea name="description" placeholder="Describe your project" required></textarea>
 
       <label>Tech Stack*</label>
-      <input
-        type="text"
-        placeholder="Ex: HTML, CSS, JavaScript, Python, Firebase, React"
-      />
+      <input name="stack" type="text" placeholder="HTML, CSS, JavaScript, Python, etc." required/>
 
       <label>GitHub Repository Link*</label>
-      <input type="url" placeholder="https://github.com/yourname/project" />
+      <input name="github" type="url" placeholder="link to repo" required/>
 
       <label>Live Demo (optional)</label>
-      <input type="url" placeholder="https://your-project-demo.com" />
+      <input name="demo" type="url" placeholder="deployment link"/>
 
-      <label>Upload Project Thumbnail (Image)*</label>
-      <div class="file-input">
-        <p>Click to Upload Image</p>
-        <input type="file" accept="image/*" style="display: none" />
+      <label>Upload Project Thumbnail*</label>
+      <div class="file-input" id="thumbBox">
+        <p id="thumbText">Click to Upload Thumbnail</p>
+        <input id="thumbInput" name="thumb" type="file" accept="image/*" hidden />
       </div>
 
       <label>Why should people check your project?*</label>
-      <textarea
-        placeholder="Explain what makes your project stand out"
-      ></textarea>
+      <textarea name="reason" placeholder="Explain uniqueness" required></textarea>
 
-      <button class="btn-upload">Upload Project</button>
-    </div>
-  </body>
+      <button type="submit" class="btn-upload">Upload Project</button>
+    </form>
+  </div>
+
+<script src="js/upload.js"></script>
+</body>
 </html>
